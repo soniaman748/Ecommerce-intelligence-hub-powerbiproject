@@ -1,176 +1,93 @@
-# Ecommerce-intelligence-hub-powerbiproject
-End-to-end E-Commerce Sales &amp; Customer Analytics solution built with Power BI, Power Query and DAX.
-📊 Project Overview
+# # 🚀 E-Commerce Intelligence Hub — Power BI
 
-E-Commerce Intelligence Hub is an end-to-end Power BI analytics project developed to transform raw e-commerce data into meaningful business insights.
+> End-to-end E-Commerce Sales & Customer Analytics project built with Power BI, Power Query and DAX.
 
-The project analyzes sales performance, customer behavior, sales targets, Sales Manager performance, sales teams, countries, customer categories, order sources, and monthly sales trends.
+## 📌 Project Overview
 
-The solution combines Power Query for data cleaning and transformation, data modeling for connecting business entities, and DAX for creating business metrics and performance calculations.
+This project analyzes e-commerce sales, customer behavior, sales targets and Sales Manager performance using Power BI.
 
-The final Power BI report provides an interactive environment where users can explore business performance through KPIs, charts, maps, slicers, drill-through pages, bookmarks, and Q&A.
+The analysis covers sales across countries, Sales Teams, Sales Managers, customer categories and order sources. The goal is to transform raw transactional data into interactive business insights.
 
-🎯 Business Objective
+## 🎯 Business Objectives
 
-The primary objective of this project is to help an e-commerce company understand:
+- Analyze overall sales and order performance
+- Compare actual sales with Sales POC targets
+- Evaluate Sales Manager and Sales Team performance
+- Analyze sales across countries
+- Identify monthly sales trends
+- Understand customer category and gender behavior
+- Analyze order sources
+- Identify customers who did not place orders
 
-How much revenue the business generated
-Whether Sales POCs and Managers achieved their targets
-Which Sales Teams are performing against their targets
-Which countries generate the most sales and orders
-How sales change month by month
-Which order sources customers use
-How customers are distributed across categories
-Which customers have not placed orders
-How Sales Managers perform across different countries
-Where sales performance may require further attention
-🗂️ Dataset
+## 📂 Dataset
 
-The project uses three main tables:
+The project contains three tables:
 
-1. Orders
+### Orders
+Transactional order information including Order ID, Customer ID, Order Value, Order Source, Sales POC, Country and Order Datetime.
 
-Contains transactional information such as:
+### Customers
+Customer information including Customer ID, Country, Gender, Age and Customer Category.
 
-Order ID
-Customer ID
-Order Datetime
-Order Value
-Order Source
-Sales POC
-Country
-2. Customers
+### Sales Targets
+Sales POC, Sales Manager, Sales Team and 2023 Sales Target information.
 
-Contains customer-related information such as:
+## 🧹 Data Preparation
 
-Customer ID
-Customer details
-Country
-Gender
-Age
-Customer Category
-3. Sales Targets
+Power Query was used to:
 
-Contains sales-performance information such as:
+- Clean and transform the source data
+- Handle missing Order Source values
+- Replace missing Order Source with Website as required
+- Create the Sales Manager field
+- Validate the data before analysis
 
-Sales POC
-Sales Manager
-Sales Team
-2023 Sales Target
+## 🧠 Data Model
 
-The original business scenario covers customers across 14 countries, with 5 Sales Teams: Alpha, Beta, Gamma, Delta and Epsilon.
+The report connects:
 
-🧹 Data Preparation
+**Customers → Orders → Sales Targets**
 
-The data was prepared using Power Query before building the report.
+This enables analysis of customer activity, transactions, Sales POCs, Sales Managers and targets within a single Power BI model.
 
-Key preparation steps included:
+## 📊 Dashboard & Analysis
 
-Imported all three datasets
-Checked data types
-Identified missing Order Source values
-Replaced missing Order Source values with Website, based on the project requirement
-Created the Sales Manager field by combining first and last names
-Checked relationships between Customers, Orders and Sales Targets
-Validated Customer IDs and Sales POCs
-Prepared the data for analysis and visualization
-🧠 Data Modeling
+The report provides analysis of:
 
-The Power BI model connects the major business entities:
+- Sales & Orders
+- Target Achievement
+- Sales Manager Performance
+- Sales Team Performance
+- Country Performance
+- Monthly Sales Trends
+- Customer Categories
+- Customers Who Did Not Order
+- Order Sources
+- Average Order Value
 
-Customers → Orders → Sales Targets
+## ⚡ Power BI Features
 
-The model enables analysis of:
+- DAX Measures
+- Power Query
+- Data Modeling
+- KPI Cards
+- Interactive Slicers
+- Maps
+- Drill-through
+- Bookmarks
+- Power BI Q&A
+- Mobile Layout
 
-Customers and their orders
-Orders handled by Sales POCs
-Sales POCs and their Sales Managers
-Sales Managers and their teams
-Actual sales compared with assigned targets
-📐 DAX & Analysis
+## 💡 Key Insights
 
-DAX was used to create business metrics and calculated columns, including:
+- Total Sales: **₹12.28M**
+- Total Orders: **2,500**
+- Total Customers: **2,500**
+- Overall Target Achievement: **95.83%**
+- Customers Without Orders: **1,047 (41.88%)**
+- Highest Sales Month: **November**
+- Highest Sales Country: **USA**
 
-Total Sales
-Total Orders
-Total Customers
-Average Order Value
-Total Sales Target
-Target Completion %
-Sales by Sales POC
-Target Bucket
-Customers Who Did Not Order
-% Customers Who Did Not Order
-Manager-level performance
-Team-level performance
-Target Classification
+## 🛠️ Tools & Technologies
 
-Sales POCs were classified into:
-
-Target Not Met
-Target Met
-Target Exceeded
-
-This allows management to quickly identify performance against individual targets.
-
-📈 Dashboard Analysis
-
-The report covers multiple business perspectives.
-
-Sales Performance
-Total Sales
-Total Orders
-Sales Target
-Target Achievement
-Monthly Sales Trend
-Sales Manager Analysis
-Manager-wise sales
-Manager target performance
-Manager performance by country
-Managers with the highest targets
-Target shortfall analysis
-Sales Team Analysis
-
-Performance across:
-
-Alpha
-Beta
-Gamma
-Delta
-Epsilon
-Customer Analysis
-Customer count by category
-Average age by category
-Customer order activity
-Customers who did not place orders
-Gender and category analysis
-Country Analysis
-Sales by country
-Orders by country
-Customers by country
-Average Order Value by country
-Sales Manager performance by country
-Order Source Analysis
-
-Analysis of orders coming from:
-
-App
-Website
-WhatsApp
-Other
-🗺️ Interactive Power BI Features
-
-The project also demonstrates several Power BI capabilities:
-
-📊 KPI Cards
-📈 Line Charts
-🍩 Donut Charts
-🗺️ Map Visualizations
-🎛️ Slicers
-🔍 Drill-through
-🔖 Bookmarks
-❓ Power BI Q&A
-📱 Mobile Layout
-Interactive filtering
-
-A Country Sales Map also supports drill-through into Sales Manager-level performance for the selected country.
+**Power BI | Power Query | DAX | Excel | Data Modeling | Data Visualization**.
